@@ -5,11 +5,107 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
-padding-right: 50px;
-padding-left: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
+#titre {
+    width: 1340px;
+    height: 10px;
+    font-family: inherit;
+    ;
+}
+
+#en-tete {
+    width: 1340px;
+   margin-bottom: 30px;
+    gap: 8px;
+
+}
+
+div#localisation {
+    display: flex;
+    width: 377px;
+    height: 49px;
+    background: #f6f6f6;
+    border-radius: 15px;
+    overflow: hidden;
+
+}
+
+#localisation img {
+    cursor: pointer;
+}
+
+#localisation .mon-label {
+    display: none;
+}
+
+#localisation .mon-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    font-size: 16px;
+    background: transparent;
+    color: #000;
+    font-weight: bold;
+}
+#localisation .mon-bouton {
+    background: #0065FC;
+    color: white;
+    border: none;
+    height: 49px;
+    width: 132px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0%;
+    text-align: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-top: 15px;
+    padding-right: 16px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    gap: 10px;
+}
+
+#localisation .mon-bouton:hover {
+    background: #0065FC;
+}
+
+img#logo_BOOKI {
+    padding-top: 30px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    height: 79px;
+    Width: 161.09px
+}
+
+h1#titre {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+p#paragraphe {
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding-top: 20px;
+}
+
+ {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
 .header {
     position: relative;
     top: 0;
@@ -25,18 +121,22 @@ li#menu_item a,
 div#nav {
     text-decoration: none;
     color: inherit;
-    margin-right: 20px;
+   
+    padding-right: 50px;
+    padding-left: 50px;
 }
 
 div#nav_bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
-    background-color: white;
-    padding: 0px 35px;
-    width: 1440;
-    height: 79;
+    width: 1440px;
+    height: 79px;
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
 
 
 }
@@ -63,11 +163,22 @@ div#ligneB {}
 }
 
 .hover-image {
-    margin: 0px 10px 0px 10px;
+    margin: 0px 50px 0px 50px;
     display: none;
     position: absolute;
     bottom: 100%;
     width: 113px;
+    height: 2px;
+    z-index: 100; 
+
+}
+
+.hover-imageA {
+    margin: 0px 50px 0px 50px;
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    width: 63px;
     height: 2px;
     z-index: 100;
 }
@@ -89,15 +200,6 @@ div#ligneB {}
     display: inline-block;
 }
 
-.hover-imageA {
-    margin: 0px 10px 0px 10px;
-    display: none;
-    position: absolute;
-    bottom: 100%;
-    width: 63px;
-    height: 2px;
-    z-index: 100;
-}
 
 .hover-containerA:hover .hover-imageA {
     display: block;
@@ -111,7 +213,9 @@ ul {
     flex-direction: row;
     justify-content: space-around;
 }
-
+div#filtres {
+    
+}
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -120,11 +224,6 @@ ul {
 
 .fa-solid {
     color: var(--main-color);
-}
-
-body {
-    margin: 0;
-    padding: 0;
 }
 
 .main-container {
