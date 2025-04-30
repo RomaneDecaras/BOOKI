@@ -104,11 +104,6 @@ p#paragraphe {
     padding-top: 20px;
 }
 
-    {
-    padding-right: 50px;
-    padding-left: 50px;
-}
-
 .header {
     position: relative;
     top: 0;
@@ -124,7 +119,6 @@ li#menu_item a,
 div#nav {
     text-decoration: none;
     color: inherit;
-
     padding-right: 50px;
     padding-left: 50px;
 }
@@ -241,17 +235,18 @@ h2#filtres {
     list-style: none;
     padding: 0px;
 }
-div#info p{
+
+div#info p {
     size: 16px;
     padding-bottom: 50px;
     padding-top: 10px;
-display: flex;
-align-items: center;
-gap: 10px;
-
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
+
 .element a {
-    
+
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -286,36 +281,35 @@ gap: 10px;
     margin: 0 auto;
     box-sizing: border-box;
 
-    a {
+    .main-container a {
         color: inherit;
-        text-decoration: none;
         text-decoration: none;
     }
 
-    .section-title {
+    .main-container .section-title {
         font-size: 22px;
     }
 
-    .card {
+    .main-container .card {
         background-color: white;
         border-radius: 20px;
         padding: 5px;
         filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     }
 
-    .card img {
+    .main-container .card img {
         object-fit: cover;
     }
 
-    .card-title {
+    .main-container .card-title { */
         font-size: 16px;
     }
 
-    .euro {
+    .main-container .euro {
         font-weight: 700;
     }
 
-    .neutral-star {
+    .main-container .neutral-star {
         color: var(--main-bg-color)
     }
 
@@ -323,6 +317,8 @@ gap: 10px;
     .hebergements-and-populaires {
         display: flex;
         justify-content: space-between;
+        gap: 30px;
+        margin-top: 40px;
     }
 
     .hebergements-and-populaires section {
@@ -335,11 +331,19 @@ gap: 10px;
     /****** Hebergements ***********/
     .hebergements {
         width: 65%;
+        background-color: var(--main-bg-color);
+        border-radius: 20px;
+        padding: 30px;
+        box-sizing: border-box;
     }
 
     /****** Populaires ***********/
     .populaires {
         width: 32%;
+        background-color: var(--main-bg-color);
+        border-radius: 20px;
+        padding: 30px;
+        box-sizing: border-box;
     }
 
     .populaires-title {
@@ -351,6 +355,11 @@ gap: 10px;
     .populaires-cards .card {
         display: flex;
         margin-top: 33px;
+        background-color: white;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-top: 15px;
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
     }
 
     .populaires-cards img {
@@ -370,17 +379,16 @@ gap: 10px;
     }
 
     .populaires-cards .card-title {
-        margin-top: 10px;
-        margin-bottom: 4px;
+        padding: 10px;
+        object-fit: cover;
+        height: 136px;
     }
-
-    .populaires-cards .card-subtitle {}
-
-    .populaires-cards .card-rating {
-        margin-bottom: 5px;
+    .hebergements-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-top: 20px;
     }
-
-
 
 
     /* Le code ci-dessous correspond à la version responsive uniquement */
