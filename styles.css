@@ -5,10 +5,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     padding-left: 50px;
     padding-right: 50px;
 }
+
 #titre {
     width: 1340px;
     height: 10px;
@@ -18,7 +20,7 @@ body {
 
 #en-tete {
     width: 1340px;
-   margin-bottom: 30px;
+    margin-bottom: 30px;
     gap: 8px;
 
 }
@@ -51,6 +53,7 @@ div#localisation {
     color: #000;
     font-weight: bold;
 }
+
 #localisation .mon-bouton {
     background: #0065FC;
     color: white;
@@ -101,7 +104,7 @@ p#paragraphe {
     padding-top: 20px;
 }
 
- {
+    {
     padding-right: 50px;
     padding-left: 50px;
 }
@@ -121,7 +124,7 @@ li#menu_item a,
 div#nav {
     text-decoration: none;
     color: inherit;
-   
+
     padding-right: 50px;
     padding-left: 50px;
 }
@@ -149,8 +152,6 @@ div#ligneB:hover {
     color: #0065FC
 }
 
-div#ligneB {}
-
 .hover-container {
     position: relative;
 }
@@ -169,8 +170,7 @@ div#ligneB {}
     bottom: 100%;
     width: 113px;
     height: 2px;
-    z-index: 100; 
-
+    z-index: 100;
 }
 
 .hover-imageA {
@@ -206,16 +206,69 @@ div#ligneB {}
 }
 
 
-ul {
+ul#list_item {
 
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-div#filtres {
-    
+
+.bar-filter {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 758px;
+    height: auto;
 }
+
+h2#filtres {
+
+    font-size: 18px;
+    font-family: Raleway;
+    margin-top: 50px;
+    flex-direction: row;
+    height: 50px;
+    margin-top: 30px;
+    gap: 1rem;
+    width: 758px;
+}
+
+#list_filter {
+    gap: 2rem;
+    display: flex;
+    list-style: none;
+    padding: 0px;
+}
+div#info p{
+    size: 16px;
+    padding-bottom: 50px;
+    padding-top: 10px;
+display: flex;
+align-items: center;
+gap: 10px;
+
+}
+.element a {
+    
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 173px;
+    height: 50px;
+    padding: 4px 19px 4px 19px;
+    border-radius: 25px;
+    border: 2px solid #D9D9D9;
+    text-decoration: none;
+    color: inherit;
+    font-family: Raleway;
+}
+
+.element a:hover {
+    background-color: #DEEBFF;
+}
+
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
