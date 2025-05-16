@@ -9,24 +9,113 @@
 body {
 
     justify-content: center;
-    padding-left: 50px;
     padding-right: 50px;
+    padding-left: 50px;
     gap: 35px;
 }
 
-#titre {
+header {
+    height: 79px;
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    padding-left: 0;
+}
+
+header img {
+    width: 161px;
+    height: 79px;
+    padding-top: 30px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+
+}
+
+.menu_item a,
+.nav {
+    text-decoration: none;
+    color: inherit;
+    padding-right: 60px;
+    padding-left: 50px;
+}
+
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1440px;
+    height: 79px;
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+
+.menu-item {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-item::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    /* Position au-dessus du texte */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    /* Épaisseur de la barre */
+    background-color: #0065FC;
+    transform: scaleX(0);
+    /* Cachée au départ */
+    transform-origin: left;
+
+}
+
+.menu-item:hover::before {
+    transform: scaleX(1);
+    /* Devient visible au hover */
+}
+
+.menu-item:hover {
+    border-top: #0065FC;
+    color: #0065FC;
+}
+
+
+.list-item {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+
+}
+
+.info-group {
+    width: 1340px;
+    height: 281px;
+    gap: 35px;
+
+}
+
+.titre {
     width: 1340px;
     height: 10px;
     font-family: inherit;
 }
 
-#en-tete {
+.en-tete {
     width: 1340px;
     margin-bottom: 30px;
     gap: 8px;
 }
 
-div#recherche {
+.recherche {
     display: flex;
     width: 377px;
     height: 49px;
@@ -35,15 +124,15 @@ div#recherche {
     overflow: hidden;
 }
 
-#recherche img {
+.recherche img {
     cursor: pointer;
 }
 
-#recherche .mon-label {
+.recherche .mon-label {
     display: none;
 }
 
-#recherche .mon-input {
+.recherche .mon-input {
     flex: 1;
     border: none;
     outline: none;
@@ -54,7 +143,7 @@ div#recherche {
     font-weight: bold;
 }
 
-#recherche .mon-bouton {
+.recherche .mon-bouton {
     background: #0065FC;
     color: white;
     border: none;
@@ -70,24 +159,16 @@ div#recherche {
     padding-top: 15px;
     padding-right: 16px;
     padding-bottom: 15px;
-    padding-left: 16px;
+    padding-left: 15px;
     gap: 10px;
 }
 
-#recherche .mon-bouton:hover {
+.recherche .mon-bouton:hover {
     background: #0065FC;
 }
 
-img#logo-BOOKI {
-    padding-top: 30px;
-    padding-right: 50px;
-    padding-bottom: 30px;
-    padding-left: 50px;
-    height: 79px;
-    Width: 161.09px
-}
 
-h1#titre {
+.titre {
     font-family: Raleway;
     font-weight: 700;
     font-size: 22px;
@@ -95,112 +176,13 @@ h1#titre {
     letter-spacing: 0%;
 }
 
-p#paragraphe {
+.paragraphe {
     font-family: Raleway;
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
     letter-spacing: 0%;
     padding-top: 20px;
-}
-
-.header {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    z-index: 10;
-    width: 1440;
-    height: 79;
-}
-
-li#menu_item a,
-div#nav {
-    text-decoration: none;
-    color: inherit;
-    padding-right: 50px;
-    padding-left: 50px;
-}
-
-div#nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1440px;
-    height: 79px;
-    font-family: Raleway;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 100%;
-    letter-spacing: 0%;
-}
-
-li#menu-item:hover {
-    border-top: #0065FC;
-    border-width: 113px;
-    border: var(--main-color);
-    color: #0065FC;
-}
-
-.hover-container {
-    position: relative;
-}
-
-.hover-container a {
-    text-decoration: none;
-    color: inherit;
-    padding: 10px;
-    display: inline-block;
-}
-
-.hover-image {
-    margin: 0px 50px 0px 50px;
-    display: none;
-    position: absolute;
-    bottom: 100%;
-    width: 113px;
-    height: 2px;
-    z-index: 100;
-}
-
-.hover-imageA {
-    margin: 0px 50px 0px 50px;
-    display: none;
-    position: absolute;
-    bottom: 100%;
-    width: 63px;
-    height: 2px;
-    z-index: 100;
-}
-
-.hover-container:hover .hover-image {
-    display: block;
-}
-
-.hover-containerA {
-    position: relative;
-}
-
-.hover-containerA a {
-    text-decoration: none;
-    color: inherit;
-    padding: 10px;
-    display: inline-block;
-}
-
-
-.hover-containerA:hover .hover-imageA {
-    display: block;
-}
-
-
-ul#list-item {
-
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
 }
 
 .bar-filter {
@@ -210,10 +192,10 @@ ul#list-item {
     gap: 1rem;
     width: 758px;
     height: auto;
+    padding-top: 20px;
 }
 
-h2#filtres {
-
+.filtres {
     font-size: 18px;
     font-family: Raleway;
     margin-top: 50px;
@@ -224,14 +206,14 @@ h2#filtres {
     width: 758px;
 }
 
-#list-filter {
+.list-filter {
     gap: 2rem;
     display: flex;
     list-style: none;
     padding: 0px;
 }
 
-div#info p {
+.info p {
     size: 16px;
     padding-bottom: 50px;
     padding-top: 10px;
@@ -262,6 +244,7 @@ button.element:focus {
     text-decoration: none;
     color: inherit;
     font-family: Raleway;
+    background-color: white;
 }
 
 .element a:hover {
@@ -278,12 +261,6 @@ button.element:focus {
     color: var(--main-color);
 }
 
-.main-container {
-    max-width: 1440px;
-    width: 100%;
-    padding: 0 50px;
-    box-sizing: border-box;
-}
 
 a {
     color: inherit;
@@ -322,8 +299,21 @@ a {
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: flex-start;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.main-container {
+    display: flex;
+    width: 1340px;
+    height: 614px;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .hebergements-and-populaires section {
@@ -334,15 +324,20 @@ a {
 }
 
 /****** Hebergements ***********/
+.hebergements {
+    width: 871px;
+    height: 614px;
+    gap: 30px;
+    border-radius: 15px;
+    padding: 30px;
+
+}
+
 .item-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 33px;
-}
-
-.hebergements {
-    width: 65%;
 }
 
 .item-title {
@@ -372,7 +367,7 @@ a {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+
 }
 
 .item-cards .item-title {
@@ -390,7 +385,11 @@ a {
 
 /****** Populaires ***********/
 .populaires {
-    width: 32%;
+    width: 429px;
+    height: 614px;
+    gap: 30px;
+    border-radius: 15px;
+    padding: 30px;
 }
 
 .populaires-title {
@@ -402,6 +401,7 @@ a {
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
+
 }
 
 .populaires-cards img {
@@ -446,11 +446,8 @@ a {
     margin-top: 30px;
     padding: 30px;
     display: grid;
-    grid-template-columns: repeat(4, 0fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
-
-    padding: 30px;
-
 }
 
 .activites-a-marseille .activity {
@@ -458,6 +455,7 @@ a {
     width: 297.5px;
     height: 439px;
     border-radius: 20px;
+    overflow: hidden;
 }
 
 .activity .activity-content {
@@ -471,7 +469,6 @@ a {
 }
 
 .activity-title {
-
     display: flex;
     justify-content: space-between;
     font-family: Raleway;
@@ -488,8 +485,9 @@ a {
 }
 
 .activity img {
-    width: 297.5px;
+    width: 100%;
     height: 380px;
+    object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -501,12 +499,18 @@ a {
     margin: 0 auto;
     padding: 40px 60px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+
 }
 
 .reference {
     display: flex;
     flex-direction: column;
+    width: 446px;
+    height: 163px;
+    gap: 15px;
+    padding: 20px;
+
 }
 
 .reference-content {
@@ -519,7 +523,7 @@ a {
     font-weight: bold;
     font-size: 16px;
     font-family: Raleway, sans-serif;
-    margin-bottom: 12px;
+
 }
 
 .reference-subtitle {
@@ -571,7 +575,5 @@ a {
     }
 }
 
-/* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
-}
+/* Small devices (phones, less than 768px)*/
+@media (max-width: 767.98px) {}
