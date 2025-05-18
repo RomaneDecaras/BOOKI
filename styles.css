@@ -298,6 +298,7 @@ main {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
+    gap: 30px;
     box-sizing: border-box;
 }
 
@@ -313,7 +314,18 @@ main {
     gap: 30px;
     border-radius: 15px;
     padding: 30px;
+}
 
+.card-h {
+    width: 250px;
+    height: 207.25px;
+    gap: 4px;
+    padding-bottom: 15px;
+    border-radius: 20px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .item-cards {
@@ -347,15 +359,13 @@ main {
 }
 
 .item-cards .item-content {
-    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    gap: 8px;
     display: flex;
     flex-direction: column;
 }
 
-.item-content {
-    gap: 8px;
-
-}
 
 .item-cards .item-title {
     margin-top: 10px;
@@ -368,6 +378,13 @@ main {
 
 .item-cards .item-rating {
     margin-bottom: 5px;
+}
+
+.show-more {
+    font-size: 18px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-family: Raleway;
 }
 
 /****** Populaires ***********/
