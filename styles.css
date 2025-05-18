@@ -22,8 +22,6 @@ header {
     padding: 0%;
 }
 
-
-
 .menu_item a,
 .nav {
     text-decoration: none;
@@ -97,7 +95,8 @@ header {
     display: flex;
     width: 377px;
     height: 49px;
-    background: #f6f6f6;
+    background: white;
+    border: solid 1px #F2F2F2;
     border-radius: 15px;
     overflow: hidden;
 }
