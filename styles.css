@@ -46,37 +46,33 @@ header {
 
 
 .menu-item {
-    position: relative;
     display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    border-top: 3px solid transparent;
+
 }
 
 .menu-item:hover {
-    padding-top: 40px;
     border-top: solid 2px #0065FC;
     color: #0065FC;
+    line-height: 77px;
 }
 
-
 .list-item {
+    align-items: center;
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 344px;
-    height: 79px;
-    left: 1096px;
+    font-size: 16px;
     gap: 68px;
-    padding-top: 20px;
-    padding-right: 50px;
-    padding-left: 50px;
-
 }
 
 .info-group {
     width: 1340px;
     height: 281px;
     gap: 35px;
-
 }
 
 .titre {
