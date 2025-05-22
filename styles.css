@@ -474,7 +474,6 @@ main {
 }
 
 .activity-title {
-    display: flex;
     justify-content: space-between;
     font-family: Raleway;
     size: 16px;
@@ -548,23 +547,44 @@ main {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    header {
+        width: 1024px;
+        height: 79px;
+    }
+
+    main {
+        display: block;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
     .hebergements {
+        display: block;
         width: 100%;
-    }
+        width: 924px;
+        height: 611.5px;
+        gap: 30px;
+        border-radius: 15px;
+        padding: 30px;
 
-    .populaires {
-        width: 100%;
-        margin-top: 50px;
     }
 
     .populaires-cards {
         display: flex;
-        flex-direction: row;
+        width: 100%;
         justify-content: space-between;
+    }
+
+    .populaires {
+        width: 100%;
+        width: 924px;
+        height: 252px;
+        gap: 20px;
+        border-radius: 15px;
+        padding: 30px;
+        margin-top: 50px;
     }
 
     .populaires-cards a {
@@ -578,7 +598,44 @@ main {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activites-a-marseille {
+        gap: 30px;
+        padding: 30px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
+    }
+
+    .activity {
+        width: 193.5px;
+        height: 270px;
+        border-radius: 20px;
+    }
+
+    .activity .activity-content {
+        width: 193.5px;
+        height: 270px;
+        border-radius: 20px;
+    }
+
+    .activity img {
+        width: 193.5px;
+        height: 200px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .activites-a-marseille .activity {
+        width: 193.5px;
+        height: 270px;
+        border-radius: 20px;
+    }
+
+    .activity-title {}
 }
 
-/* Small devices (phones, less than 768px)*/
-@media (max-width: 767.98px) {}
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* ... */
+}
