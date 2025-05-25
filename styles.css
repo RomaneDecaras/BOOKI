@@ -560,12 +560,28 @@ main {
         padding-right: 50px;
     }
 
+    /***bar-filter***/
+    .bar-filter {
+        display: grid;
+    }
+
+    .filtres {
+        margin-top: 15px;
+        margin-bottom: -30px;
+    }
+
+    .info-bar {
+        margin-top: 20px;
+    }
+
     /***herbergemts***/
     .hebergements-and-populaires {
+        padding-top: 50px;
         flex-direction: column;
     }
 
     .hebergements {
+
         display: block;
         width: 100%;
         width: 924px;
