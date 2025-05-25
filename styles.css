@@ -610,7 +610,8 @@ main {
     }
 
     .populaires-cards a {
-        width: 30%;
+        width: 50%;
+        margin-top: -10px;
     }
 
     .populaires-cards .card-title {
@@ -619,6 +620,12 @@ main {
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    .card {
+        width: 274.67px;
+        height: 146px;
+        border-radius: 20px;
     }
 
     /***activities***/
