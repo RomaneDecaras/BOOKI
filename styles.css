@@ -453,7 +453,7 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
     margin: 30px;
-    padding-bottom: 70px;
+    padding-bottom: 60px;
 }
 
 .activites-a-marseille .activity {
@@ -529,8 +529,6 @@ main {
     font-weight: bold;
     font-size: 16px;
     font-family: Raleway, sans-serif;
-
-
 }
 
 .reference-subtitle {
@@ -548,6 +546,11 @@ main {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    main {
+        display: block;
+    }
+
+    /***header***/
     header {
         width: 1024px;
         height: 79px;
@@ -557,10 +560,7 @@ main {
         padding-right: 50px;
     }
 
-    main {
-        display: block;
-    }
-
+    /***herbergemts***/
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -576,6 +576,7 @@ main {
 
     }
 
+    /***populaires***/
     .populaires-cards {
         display: flex;
         width: 100%;
@@ -604,12 +605,11 @@ main {
         font-size: 13px;
     }
 
+    /***activities***/
     .activites-a-marseille {
         gap: 30px;
-        padding: 30px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        width: 100%;
     }
 
     .activity {
