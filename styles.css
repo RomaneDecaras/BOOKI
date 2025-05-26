@@ -667,22 +667,52 @@ main {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    header {
-        width: 375px;
-        height: 115px;
+    body {
+        padding: 10px;
     }
 
+    /***header***/
     .nav-bar {
-        display: block;
-        align-items: center;
+        display: grid;
+        padding-bottom: 50px;
+
     }
 
-    .logo-booki img {
-        display: flex;
-        align-items: center;
+    .logo-booki {
+        padding-top: 30px;
+        margin: auto;
+    }
+
+    .nav {
+        border-bottom: solid 2px #F2F2F2;
+        line-height: 50px;
+
     }
 
     .list-item {
-        display: block;
+        padding-top: 30px;
+    }
+
+    .menu-item:hover {
+        border-top: none;
+    }
+
+    .menu-item {}
+
+    .menu-item a {
+        height: 50px;
+        width: 50%;
+    }
+
+    .menu-item:hover {
+        border-bottom: solid 2px #0065FC;
+        height: 50%;
+        line-height: 50px;
+        color: #0065FC;
+    }
+
+    /***info-group***/
+    .info-group {
+        padding-top: 80px;
     }
 }
