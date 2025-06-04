@@ -1,0 +1,121 @@
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+    main {
+        display: block;
+    }
+
+    /***header***/
+    header {
+        width: 1024px;
+        height: 79px;
+    }
+
+    .nav-bar {
+        padding-right: 50px;
+    }
+
+    /***bar-filter***/
+    .bar-filter {
+        display: grid;
+    }
+
+    .filtres {
+        margin-top: 15px;
+        margin-bottom: -30px;
+    }
+
+    .info-bar {
+        margin-top: 20px;
+    }
+
+    /***herbergemts***/
+    .hebergements-and-populaires {
+        padding-top: 50px;
+        flex-direction: column;
+    }
+
+    .hebergements {
+
+        display: block;
+        width: 100%;
+        width: 924px;
+        height: 611.5px;
+        gap: 30px;
+        border-radius: 15px;
+        padding: 30px;
+
+    }
+
+    /***populaires***/
+    .populaires-cards {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .populaires {
+        width: 100%;
+        width: 924px;
+        height: 252px;
+        gap: 20px;
+        border-radius: 15px;
+        padding: 30px;
+        margin-top: 50px;
+    }
+
+    .populaires-cards a {
+        width: 50%;
+        margin-top: -10px;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+
+    .card {
+        width: 274.67px;
+        height: 146px;
+        border-radius: 20px;
+    }
+
+    /***activities***/
+    .activites-a-marseille {
+        gap: 30px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .activity {
+        width: 193.5px;
+        height: 270px;
+        border-radius: 20px;
+    }
+
+    .activity .activity-content {
+        width: 193.5px;
+        height: 270px;
+        border-radius: 20px;
+    }
+
+    .activity img {
+        width: 193.5px;
+        height: 200px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .activites-a-marseille .activity {
+        width: 193.5px;
+        height: 270px;
+        border-radius: 20px;
+    }
+
+    .principal-title {
+        padding-top: 30px;
+    }
+}
