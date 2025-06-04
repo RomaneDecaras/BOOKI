@@ -2,24 +2,52 @@
 @media (max-width: 767.98px) {
     body {
         padding: 10px;
+        width: 375px;
+    }
+
+    html {
+        width: 375px;
+    }
+
+    header body {
+        display: flex;
+        flex-direction: column;
+        object-fit: cover;
+        width: 375px;
     }
 
     /***header***/
     .nav-bar {
         display: grid;
-        padding-bottom: 50px;
+        padding-bottom: 30px;
 
     }
 
     .logo-booki {
-        padding-top: 30px;
+        padding-top: 20px;
         margin: auto;
     }
 
     .nav {
         border-bottom: solid 2px #F2F2F2;
         line-height: 50px;
+    }
 
+    .en-tete {
+        padding-right: 40px;
+        padding-left: 20px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 375px;
+    }
+
+    .titre {
+        padding-bottom: 20px;
+    }
+
+    .paragraphe {
+        padding-top: 30px;
     }
 
     .list-item {
@@ -29,8 +57,6 @@
     .menu-item:hover {
         border-top: none;
     }
-
-    .menu-item {}
 
     .menu-item a {
         height: 50px;
@@ -42,6 +68,14 @@
         height: 50%;
         line-height: 50px;
         color: #0065FC;
+    }
+
+    .recherche .button-search {
+        display: none;
+    }
+
+    .img-responsive {
+        display: block;
     }
 
     /***info-group***/
