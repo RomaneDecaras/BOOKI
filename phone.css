@@ -18,6 +18,9 @@
 
     /***header***/
     .nav-bar {
+        width: 100%;
+        max-width: 375px;
+        height: 115px;
         display: grid;
         padding-bottom: 30px;
 
@@ -42,12 +45,16 @@
         width: 375px;
     }
 
+    .info-group {
+        width: 375px;
+    }
+
     .titre {
-        padding-bottom: 20px;
+        padding-top: 80px;
     }
 
     .paragraphe {
-        padding-top: 30px;
+        padding-top: 50px;
     }
 
     .list-item {
@@ -78,8 +85,39 @@
         display: block;
     }
 
-    /***info-group***/
-    .info-group {
-        padding-top: 80px;
+    .element a {
+        width: 162px;
+        justify-items: center;
+        justify-content: center;
+
     }
+
+    .list-filter {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 1rem;
+        max-width: 765px;
+        margin: 0 auto;
+        justify-items: center;
+        align-items: center;
+        padding-right: 20px;
+
+    }
+
+    .info-bar {
+        display: flex;
+        width: 350px;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .main-container {
+        padding-top: 250px;
+    }
+
+    .hebergement-and-populaire {
+        width: 375px;
+    }
+
 }
