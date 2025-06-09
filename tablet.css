@@ -54,11 +54,11 @@
     }
 
     /***populaires***/
-    .populaires-cards {
+    .popular-cards {
         display: flex;
     }
 
-    .populaires {
+    .popular {
         width: 100%;
         max-width: 924px;
         height: 252px;
@@ -67,16 +67,16 @@
         padding: 30px;
     }
 
-    .populaires-cards a {
+    .popular-cards a {
         width: 50%;
         margin-top: -10px;
     }
 
-    .populaires-cards .card-title {
+    .popular-cards .card-title {
         font-size: 14px;
     }
 
-    .populaires-cards .card-subtitle {
+    .popular-cards .card-subtitle {
         font-size: 13px;
     }
 
