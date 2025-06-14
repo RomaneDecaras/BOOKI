@@ -48,13 +48,12 @@ header {
 
 .menu-item {
     display: inline-block;
-    position: relative;
     box-sizing: border-box;
     border-top: 3px solid transparent;
 }
 
 .menu-item:hover {
-    border-top: solid 2px #0065FC;
+    border-top: solid 3px #0065FC;
     color: #0065FC;
     line-height: 77px;
 }
@@ -69,10 +68,15 @@ header {
     gap: 68px;
 }
 
+.info-bar {
+    display: flex;
+    margin-top: 20px;
+    gap: 15px;
+}
+
 .info-group {
     width: 100%;
     max-width: 1340px;
-    height: 281px;
     gap: 35px;
 }
 
@@ -289,12 +293,13 @@ main {
 .main-container {
     display: flex;
     width: 100%;
+    max-width: 1440px;
     box-sizing: border-box;
-    gap: 80px;
+    gap: 50px;
+    padding-top: 30px;
 }
 
 .hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
     gap: 30px;
@@ -309,11 +314,11 @@ main {
 /****** Hebergements ***********/
 .hebergements {
     width: 100%;
-    max-width: 871px;
     height: 614px;
     gap: 30px;
     border-radius: 15px;
     padding: 30px;
+    background-color: var(--main-bg-color);
 }
 
 .card-h {
@@ -388,12 +393,15 @@ main {
 }
 
 /****** Populaires ***********/
+
 .popular {
     width: 100%;
     max-width: 429px;
     gap: 30px;
     border-radius: 15px;
     padding: 30px;
+    background-color: var(--main-bg-color);
+
 }
 
 .popular-title {

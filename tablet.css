@@ -29,10 +29,6 @@
         margin-bottom: -30px;
     }
 
-    .info-bar {
-        margin-top: 20px;
-    }
-
     /***herbergements***/
 
     .main-container {
@@ -50,7 +46,6 @@
         gap: 30px;
         border-radius: 15px;
         padding: 30px;
-        margin-top: 50px;
     }
 
     /***populaires***/
