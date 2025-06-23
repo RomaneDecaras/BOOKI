@@ -41,6 +41,10 @@
         gap: 20px;
     }
 
+    .popular img {
+        width: 91.67px;
+    }
+
     /***activites***/
     .activites-a-marseille {
         display: grid;
