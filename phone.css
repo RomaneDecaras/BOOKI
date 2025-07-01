@@ -14,6 +14,8 @@
 
     .nav-bar {
         display: grid;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .logo-booki {
@@ -82,7 +84,7 @@
 
     /***search-bar***/
     .recherche {
-        width: 335px;
+        width: 375px;
         height: 49px;
         margin-left: 15px;
     }
@@ -92,11 +94,11 @@
     }
 
     .img-responsive {
-        display: block;
-        position: absolute;
-        right: 0;
-        padding-top: 10px;
-        padding-right: 15px;
+        display: inline;
+        object-fit: cover;
+        margin-left: -15px;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
     /***hebergements and popular***/
@@ -173,13 +175,15 @@
     .activites-a-marseille {
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 
     .activity img {
-        width: 315px;
+        width: 100%;
         height: 141px;
         object-fit: cover;
     }
+
 
     /***footer***/
 
