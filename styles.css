@@ -94,6 +94,11 @@ header {
     width: 400px;
 }
 
+.mon-input::placeholder {
+    font-size: 18px;
+    color: black;
+}
+
 .img-responsive {
     display: none;
 }
