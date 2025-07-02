@@ -14,7 +14,7 @@ html body {
     overflow-x: hidden;
 }
 
-main {
+.principal-container {
     max-width: 1440px;
     margin-right: auto;
     margin-left: auto;
@@ -146,6 +146,7 @@ header {
 /***bar-filter***/
 .bar-filter {
     display: flex;
+    gap: 10px;
     flex-direction: row;
     align-items: center;
     width: 100%;
@@ -168,10 +169,17 @@ header {
     padding: 0;
 }
 
-.element a {
+.element {
     display: flex;
     box-sizing: border-box;
     align-items: center;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    text-decoration: none;
+    font-weight: bold;
     gap: 0.5rem;
     white-space: nowrap;
     box-shadow: none;
@@ -183,17 +191,16 @@ header {
     height: 50px;
 }
 
-.element a:hover {
+.element:hover {
     background-color: #DEEBFF;
 }
 
-button.element {
+.element {
     outline: none;
-    border: none;
     border-radius: 25px;
 }
 
-button.element:focus {
+.element:focus {
     box-shadow: none;
 }
 
@@ -407,7 +414,6 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     max-width: 1440px;
     gap: 40px;
-    padding: auto;
     margin: 30px;
     padding-bottom: 60px;
 }
