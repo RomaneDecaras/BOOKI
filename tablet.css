@@ -5,7 +5,15 @@
         margin: auto;
     }
 
-    /***header & infor-group***/
+    .main-container {
+        margin-left: 0;
+    }
+
+    /***header & info-group***/
+    .nav-bar {
+        margin-left: auto;
+    }
+
     .nav {
         display: flex;
     }
@@ -16,6 +24,10 @@
         margin: 0;
     }
 
+    .info-group {
+        margin-left: 0;
+    }
+
     /***hebergements & populaires***/
     .card-h {
         height: 207.25px;
@@ -23,16 +35,34 @@
 
     .main-container {
         display: grid;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .hebergements-and-populaires {
+        width: 100%;
+    }
+
+    .hebergements {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
     }
 
     .popular {
         width: 100%;
+        max-width: 100%;
         height: 100%;
+    }
+
+    .card-link {
+        flex: 1;
     }
 
     .card {
         width: 100%;
         height: 146px;
+        max-width: 100%;
     }
 
     .popular-cards {
@@ -46,23 +76,16 @@
 
     /***activites***/
     .activites-a-marseille {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        padding-right: 10px;
+        margin-left: 0;
     }
 
-    .activity img {
-        width: 193.5px;
-        height: 200px;
-    }
-
-    .activites-a-marseille .activity {
-        width: 193.5px;
+    .activity {
+        max-width: 100%;
         height: 270px;
     }
 
     .activity-title {
-        display: flex;
-        place-items: center;
-        width: 193.5px;
+        max-height: 60px;
     }
 }

@@ -20,6 +20,10 @@ html body {
     margin-left: auto;
 }
 
+.main-container {
+    margin-left: 70px;
+}
+
 /***header & info-group***/
 header {
     display: flex;
@@ -32,13 +36,16 @@ header {
 .info-group {
     display: grid;
     width: 100%;
+    margin-left: 70px;
 }
 
 .nav-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    margin-left: 70px;
+    max-width: 100%;
+    width: 1234px;
     height: 79px;
     font-size: 16px;
 }
@@ -173,21 +180,15 @@ header {
     display: flex;
     box-sizing: border-box;
     align-items: center;
-    display: inline-flex;
-    align-items: center;
     padding: 10px 16px;
     border-radius: 8px;
-    background-color: #f2f2f2;
     text-decoration: none;
     font-weight: bold;
     gap: 0.5rem;
     white-space: nowrap;
     box-shadow: none;
-    padding: 4px 19px 4px 19px;
-    border-radius: 25px;
     border: 2px solid #D9D9D9;
     background-color: white;
-    font-weight: bold;
     height: 50px;
 }
 
@@ -234,43 +235,28 @@ a {
     color: var(--main-bg-color)
 }
 
-.hebergements-and-populaires {
-    display: flex;
-    justify-content: flex-start;
-}
-
 .main-container {
     display: flex;
-    width: 100%;
-    box-sizing: border-box;
+    max-width: 100%;
     gap: 50px;
     padding-top: 30px;
 }
 
 .hebergements-and-populaires section {
     border-radius: 20px;
-    padding: 30px;
-    gap: 30px;
-    box-sizing: border-box;
-}
-
-.card-subtitle {
-    font-size: 14px;
-    gap: 8px;
+    padding: 20px;
 }
 
 /*** Hebergements ***/
 .hebergements {
+    max-width: 871px;
     width: 100%;
     height: 614px;
-    gap: 30px;
-    border-radius: 15px;
-    padding: 30px;
     background-color: var(--main-bg-color);
 }
 
 .card-h {
-    width: 100%;
+    max-width: 100%;
     height: 207.25px;
     gap: 4px;
     padding-bottom: 15px;
@@ -286,6 +272,7 @@ a {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 33px;
+    width: 100%;
 }
 
 .item-title {
@@ -299,6 +286,7 @@ a {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 
 .item-cards img {
@@ -311,13 +299,14 @@ a {
 }
 
 .item-cards .item-content {
-    padding-right: 15px;
+    display: flex;
     padding-left: 15px;
     gap: 8px;
-    display: flex;
     flex-direction: column;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
-
 
 .item-cards .item-title {
     margin-top: 10px;
@@ -346,6 +335,9 @@ a {
 }
 
 .card {
+    max-width: 369px;
+    width: 100%;
+    min-width: 200px;
     background-color: white;
     border-radius: 20px;
     padding: 5px;
@@ -361,6 +353,7 @@ a {
 }
 
 .popular {
+    max-width: 429px;
     width: 100%;
     height: 614px;
     border-radius: 15px;
@@ -386,10 +379,12 @@ a {
 }
 
 .popular-cards .card-content {
-    padding-left: 15px;
     display: flex;
+    padding-left: 15px;
     flex-direction: column;
     justify-content: space-between;
+    width: 77%;
+    overflow: scroll;
 }
 
 .popular-cards .card-title {
@@ -398,54 +393,61 @@ a {
 }
 
 /*** Activites a Marseille ***/
-
 .principal-title {
     font-size: 22px;
-    grid-column: 1/ -1;
     padding-top: 60px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-bottom: 40px;
 }
 
 .activity-cards {
-    display: contents;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1280px;
 }
 
 .activites-a-marseille {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    max-width: 1440px;
-    gap: 40px;
-    margin: 30px;
+    width: 100%;
+    margin: 30px auto;
     padding-bottom: 60px;
+    margin-left: 70px;
+    padding-right: 70px;
 }
 
+
 .activity {
-    display: grid;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
     box-shadow: 0px 3px 15px 0px #0000001A;
-    width: 297.5px;
+    max-width: 297.5px;
     height: 439px;
     border-radius: 20px;
     overflow: hidden;
+    white-space: nowrap;
+    flex: 1;
 }
+
 
 .activity-title {
     display: flex;
     place-items: center;
-    padding-left: 20px;
+    padding: 20px;
     font-size: 16px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
+    white-space: wrap;
 }
 
 .activity img {
     width: 100%;
-    height: 380px;
+    height: 100%;
     object-fit: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
 }
 
 /***footer***/
-
 footer {
     display: flex;
     background-color: #f2f2f2;

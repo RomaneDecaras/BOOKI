@@ -7,15 +7,24 @@
         width: 100%;
     }
 
+    .main-container {
+        margin-left: 0;
+    }
+
     /***header & info-group***/
     html header {
         margin-bottom: 80px;
+    }
+
+    .info-group {
+        margin-left: 0;
     }
 
     .nav-bar {
         display: grid;
         align-items: center;
         justify-content: space-between;
+        margin-left: 0;
     }
 
     .logo-booki {
@@ -41,6 +50,10 @@
         width: 100%;
     }
 
+    .recherche {
+        max-width: 335px;
+    }
+
     .hebergements-link,
     .activites-link {
         display: flex;
@@ -53,9 +66,9 @@
 
     .hebergements-link:hover,
     .activites-link:hover {
+        display: flex;
         border-top: 2px solid transparent;
         color: #0065FC;
-        display: flex;
         place-content: center;
         border-bottom: solid 2px #0065FC;
         line-height: 50px;
@@ -115,11 +128,16 @@
     }
 
     /***popular***/
+    .popular {
+        max-width: 100%;
+    }
 
     .popular-cards {
         display: grid;
         place-content: center;
         width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .popular-cards .card {
@@ -143,12 +161,13 @@
     .hebergements {
         display: grid;
         place-content: center;
+        width: 100%;
         height: 100%;
         background-color: transparent;
     }
 
     .card-h {
-        width: 335px
+        width: 335px;
     }
 
     .item-cards {
@@ -164,12 +183,18 @@
 
     /***activities***/
     .principal-title {
-        padding-top: 10px;
+        padding: 30px;
     }
 
-    .activites-a-marseille .activity {
-        width: auto;
+    .activity {
+        max-width: 315px;
         height: 200px;
+    }
+
+    .activity-cards {
+        display: flex;
+        flex-direction: column;
+        place-content: center;
     }
 
     .activites-a-marseille {
@@ -179,14 +204,11 @@
     }
 
     .activity img {
-        width: 100%;
+        width: 315px;
         height: 141px;
-        object-fit: cover;
     }
 
-
     /***footer***/
-
     footer {
         display: flex;
         flex-direction: column;
