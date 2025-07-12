@@ -60,7 +60,7 @@
         display: flex;
         place-content: center;
         border-top: 2px solid transparent;
-        border-bottom: 2px solid #f2f2f2;
+        border-bottom: 2px solid var(--main-bg-color);
         line-height: 50px;
         width: 50vw;
     }
@@ -69,9 +69,9 @@
     .activites-link:hover {
         display: flex;
         border-top: 2px solid transparent;
-        color: #0065FC;
+        color: var(--main-color);
         place-content: center;
-        border-bottom: solid 2px #0065FC;
+        border-bottom: solid 2px var(--main-color);
         line-height: 50px;
         width: 50vw;
     }
@@ -111,7 +111,7 @@
         place-content: center;
         color: white;
         padding-left: 18px;
-        background-color: #0065FC;
+        background-color: var(--main-color);
         border-radius: 15px;
         border-radius: 15px;
         width: 50px;
