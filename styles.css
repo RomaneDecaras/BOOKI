@@ -92,13 +92,22 @@ header {
 
 /***search-bar***/
 .recherche {
-    display: flex;
-    align-items: center;
+    display: grid;
     background: white;
     border: solid 1px #F2F2F2;
     border-radius: 16px;
-    overflow: hidden;
-    width: 400px;
+    grid-template-columns: auto 1fr auto auto;
+    height: 49px;
+    width: 377px;
+}
+
+.fa-location-dot {
+    place-content: center;
+    padding-left: 20px;
+    background-color: #F2F2F2;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 50px;
 }
 
 .mon-input::placeholder {
@@ -106,7 +115,7 @@ header {
     color: black;
 }
 
-.img-responsive {
+.fa-magnifying-glass {
     display: none;
 }
 
@@ -218,7 +227,7 @@ header {
     --filter-bg-color: #DEEBFF;
 }
 
-.fa-solid {
+.fa-star {
     color: var(--main-color);
 }
 

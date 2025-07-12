@@ -52,6 +52,7 @@
 
     .recherche {
         max-width: 335px;
+        margin-left: 20px;
     }
 
     .hebergements-link,
@@ -97,21 +98,28 @@
 
     /***search-bar***/
     .recherche {
-        width: 375px;
+        width: 335px;
         height: 49px;
-        margin-left: 15px;
     }
 
     .recherche .button-search {
         display: none;
     }
 
-    .img-responsive {
+    .fa-magnifying-glass {
         display: inline;
-        object-fit: cover;
-        margin-left: -15px;
-        margin-top: auto;
-        margin-bottom: auto;
+        place-content: center;
+        color: white;
+        padding-left: 18px;
+        background-color: #0065FC;
+        border-radius: 15px;
+        border-radius: 15px;
+        width: 50px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .img-responsive img {
+        padding-left: 20px;
     }
 
     /***hebergements and popular***/
