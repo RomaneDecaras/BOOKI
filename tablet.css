@@ -5,10 +5,6 @@
         margin: auto;
     }
 
-    .main-container {
-        margin-left: 0;
-    }
-
     /***header & info-group***/
     .nav-bar {
         margin-left: auto;
@@ -16,6 +12,10 @@
 
     .nav {
         display: flex;
+    }
+
+    .filtres {
+        height: 30px;
     }
 
     .bar-filter {
